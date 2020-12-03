@@ -25,6 +25,8 @@
             text-align: center;
             border: solid 2px red;
             width: 80%;
+            animation: bounce;
+            animation-duration: 3s;
         }
     </style>
     <script>
@@ -37,12 +39,8 @@
 </head>
 
 <body>
-    <div class="containor">
-        <h1>Hello1</h1>
-        <h1>Hello2</h1>
-        <h1>Hello3</h1>
-    </div>
-    <div hidden style="text-align: center;font-size: 100px;">
+    <div style="text-align: center;font-size: 100px;">
+        <div class="animate__animated animate__flip">
         <span class="r">W</span>
         <span class="b">i</span>
         <span class="r">t</span>
@@ -55,6 +53,8 @@
         <span class="b">r</span>
         <span class="r">l</span>
         <span class="b">d</span>
+        </div>
+        <div class="animate__animated animate__fadeInLeftBig">Welcome to the new Word!</div>
         <br>
         <div class="fa fa-github w3-spin"></div>
         <div class="fa fa-terminal w3-spin"></div>
