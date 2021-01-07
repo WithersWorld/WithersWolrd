@@ -49,7 +49,7 @@
         .hero > .row > .col {
             text-align: center;
         }
-        .btn {
+        #buybtn {
             background-color: red;
             padding: 8px 17px;
             border-radius: 1000px;
@@ -58,7 +58,7 @@
         .go > span {
             cursor: pointer;
         }
-        .go > #new {
+        .go > #buyfeed {
             margin-top: 20px;
         }
         .herologo > span {
