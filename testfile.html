@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/acf35067e0.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <title>Webysite -- Best Website!</title>
     <style>
@@ -28,11 +28,44 @@
             font-family: "Goldman";
             font-size: 20px;
         }
-        #welcome {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .items > span {
+            cursor: pointer;
         }
+        .hero {
+            margin: 0;
+            width: 100%;
+            height: auto;
+            background-color: black;
+            color: white;
+            font-family: "Goldman";
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .hero > .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .hero > .row > img {
+            width: 20%;
+        }
+        .hero > .row > .col {
+            text-align: center;
+        }
+        .btn {
+            background-color: red;
+            padding: 8px 17px;
+            border-radius: 1000px;
+            margin-right: 20px;
+        }
+        .go > span {
+            cursor: pointer;
+        }
+        .go > #new {
+            margin-top: 20px;
+        }
+        
     </style>
 
 </head>
@@ -48,8 +81,23 @@
             <span class="fa fa-store"></span>
         </div>
     </nav>
-    <div id="welcome">
-        <div id="webname">Webysite</div>
+
+    <div class="hero">
+        <div class="row">
+            <img src="https://www.apple.com/v/watch/home/ag/images/overview/series-6/tile_watch_s6__bbw92knen8mq_large.jpg">
+            <div class="col">
+                <img src="https://www.apple.com/v/watch/home/ag/images/overview/series-6/logo_watch_s6__d70ay2jmy0uq_medium.png">
+                <h1>The clocks of Time</h1><h1>New Watch on Sale</h1>
+                <h2>Only $999.99</h2>
+
+                <div class="go">
+                    <span class="btn">Buy</span>
+                    <span>Learn More ></span>
+                    <div id="new">We will keep your money! HaHa! You got scammed!</div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
