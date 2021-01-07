@@ -12,6 +12,7 @@
         body {
             margin: 0;
             padding: 0;
+            background-color: grey;
         }
         nav {
             background: rgb(0, 0, 0);
@@ -31,9 +32,12 @@
         .items > span {
             cursor: pointer;
         }
+        .items > span:hover {
+            color: red;
+        }
         .hero {
             margin: 0;
-            width: 100%;
+            width: 70%;
             height: auto;
             background-color: black;
             color: white;
@@ -65,6 +69,9 @@
         .go > #new {
             margin-top: 20px;
         }
+        .herologo > span {
+            font-size: 30px;
+        }
         
     </style>
 
@@ -86,9 +93,9 @@
         <div class="row">
             <img src="https://www.apple.com/v/watch/home/ag/images/overview/series-6/tile_watch_s6__bbw92knen8mq_large.jpg">
             <div class="col">
-                <div class="logo">
+                <div class="herologo">
                     <span class="fa fa-apple fa-flip-horizontal"></span>
-                    <span><h1>WATCH</h1></span>
+                    <span>WATCH</span>
                     <div style="color: red;">SERIES SCAM</div>
                 </div>
                 <h1>The clocks of Time</h1><h1>New Watch on Sale</h1>
