@@ -1,5 +1,5 @@
 # Welcome to WebyHow
-WebyHelp helps you know how to install or use things
+WebyHow helps you know how to install or use things
 
 Installing apps on Chromebook
   - Installing Linux on Chromebook
