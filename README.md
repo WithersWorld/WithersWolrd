@@ -1,7 +1,8 @@
-# WithersWorld
-This is the WithersWorld's test repository
+# Welcome to WebyHow
+WebyHelp helps you know how to install or use things
 
-Testing README.md
-
-If you want to go on Elppa go to https://withersworld.github.io/
+Installing apps on Chromebook
+  - Installing Linux on Chromebook
+  - Installing Minecraft on Linux
+  - Installing other apps on Linux
 
