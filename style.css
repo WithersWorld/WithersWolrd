@@ -85,7 +85,7 @@ color: darkred;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    font-family: Mountains of Christmas;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #loaderHome {
     border: 16px solid #f3f3f3;
