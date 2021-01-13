@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+/*Christmas: Mountains of Christmas */
+/*Halloween: Butcherman */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #383c41;
+}
+#top {
+    background: rgb(0, 0, 0);
+    width: 100vw;
+    height: 80px;
+    color: white;
+}
+#topItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+/*Tabs*/
+.tab:hover {
+  color: red;
+  font-size: 60px;
+  cursor: pointer;
+}
+.tab {
+color: white;
+text-decoration: none;
+}
+.current {
+color: darkred;
+}
+#footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.footerItems {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+#about {
+  background-color: gray;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+::selection {
+    color: black;
+    background-color: red;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+    }
+    
+    to {
+      text-shadow: 0 0 20px red 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+    }
+}
+#notif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: yellow;
+}
+.withers {
+    font-size: 60px;
+    animation: rubberBand 1.5s;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+#homeWelcome {
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: Mountains of Christmas;
+}
+#loaderHome {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid red;
+    border-right: 16px solid black;
+    border-bottom: 16px solid red;
+    border-left: 16px solid black;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+#shopItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+#whattf {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+#table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*WithersApps cards*/
+#WithersApps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 50vh;
+}
+#WithersApps .cards{
+    font-size: 60px;
+    padding: 60px;
+    background-color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 60px;
+    margin: 20px;
+}
+#WithersApps .cards .icon{
+    font-size: 100px;
+}
+#WithersApps.cards:hover {
+    text-shadow: 2px black;
+}
+
+/*Side nav*/
+.side {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .side a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .side a:hover {
+    color: red;
+  }
+  .side .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  @media screen and (max-height: 450px) {
+    .side {padding-top: 15px;}
+    .side a {font-size: 18px;}
+  }
+
+  .input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /*Sign in*/
+  button {
+    background-color: red;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  .container {
+    padding: 16px;
+    background-color: black;
+  }
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+  }
+  .modal-content {
+    background-color: black;
+    color: white;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+  }
+  .close:hover,
+  .close:focus {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+  } 
+
+/*WithersBot*/
+#join {
+  background-color: blue;
+  color: white;
+  font-size: 50px;
+  width: 360px;
+  padding: 20px;
+  cursor: pointer;
+}
+#BotCon {
+  display: flex;
+  color: white;
+  font-size: 30px;
+}
+#botCommandCon {
+  width: 85vw;
+  height: auto;
+}
+.botCommands {
+  background-color: black;
+  color: white;
+  width: 75vw;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.commandClassName {
+  background-color: red;
+  color: black;
+  padding: 10px;
+  width: 75vw;
+  margin-left: 10px;
+}
+.sip {color: red;}
+.ncy {color: orange;}
+th {
+  border-bottom: 2px solid white;
+}
+td {
+  border-bottom: 1px solid white;
+}
+tr:hover {
+  background-color: rgb(41, 38, 38);
+}
+
+#botSettingCon {
+  background-color: #484b4e;
+  padding: 20px;
+  margin-top: 50px;
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  position: sticky;
+}

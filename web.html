@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/acf35067e0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src=".js"></script>
+    <link rel="stylesheet" href=".css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="https://myne.com/sign.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+          </div>
+      
+          <div class="container">
+            <div class="accitem">
+                <span><i class="fa fa-user fa-fw"></i></span>
+                <input class="input" type="text" name="username" placeholder="Username" maxlength="15" required="required">
+            </div>
+
+            <div class="accitem">
+                <span><i class="fa fa-key fa-fw"></i></span>
+                <input class="input" type="password" name="password" placeholder="Password" maxlength="20" required="required">
+            </div>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            <button type="submit">Login</button>
+          </div>
+      
+          <div class="container">
+            <span><a href="#">Don't have an account?</a></span>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+          </div>
+        </form>
+      </div>
+    <nav id="top" style="text-align: center;">
+        <div id="topItems" class="w3-xxxlarge w3-padding" style="text-align: center;">
+            <a id="sideButton" class="fa fa-bars" onclick="openNav()"></a>
+            <a id="homeButton" class="fa fa-home tab" onclick="openTab(event, 'home')" ></a>
+            <a id="shopButton" class="fa fa-shopping-cart tab" onclick="openTab(event, 'shop')" title="WithersShop"></a>
+            <a id="botButton" class="fa fa-plug tab" onclick="openTab(event, 'bot')" title="WithersBot"></a>
+            <a class="fa fa-question tab"></a> |
+            <a class="fa fa-sign-in" id="signin" onclick="document.getElementById('id01').style.display='block'"></a>
+        </div>
+    </nav>
+
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.intro {
+    text-align: center;
+    font-size: 80px;
+}
+#top {
+    background: rgb(0, 0, 0);
+    width: 100vw;
+    height: 80px;
+    color: white;
+}
+#topItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+/*Tabs*/
+.tab:hover {
+  color: red;
+  font-size: 60px;
+  cursor: pointer;
+}
+.tab {
+color: white;
+text-decoration: none;
+}
+.current {
+color: darkred;
+}
+/*Sign in*/
+button {
+    background-color: red;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  .container {
+    padding: 16px;
+    background-color: black;
+  }
+  .input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+  }
+  .modal-content {
+    background-color: black;
+    color: white;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+  }
+  .close:hover,
+  .close:focus {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+  } 
+    </style>
+
+    <script>
+         $('.tab').on('click', function(e) {
+        e.preventDefault();
+
+        $('.tab.current').removeClass('current');
+        $(this).addClass('current');
+    });
+    document.getElementById("homeButton").click();
+    </script>
+</body>
+</html>

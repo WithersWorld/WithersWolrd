@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Website of Wither">
+    <meta name="keywords" content="withersworld, shop, wither, withersbot">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/acf35067e0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="home.js"></script>
+    <link rel="stylesheet" href="home.css" />
+    <title>WithersWebsite</title>
+</head>
+<body>
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="https://myne.com/sign.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+          </div>
+      
+          <div class="container">
+            <div class="accitem">
+                <span><i class="fa fa-user fa-fw"></i></span>
+                <input class="input" type="text" name="username" placeholder="Username" maxlength="15" required="required">
+            </div>
+
+            <div class="accitem">
+                <span><i class="fa fa-key fa-fw"></i></span>
+                <input class="input" type="password" name="password" placeholder="Password" maxlength="20" required="required">
+            </div>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            <button type="submit">Login</button>
+          </div>
+      
+          <div class="container">
+            <span><a href="#">Don't have an account?</a></span>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+          </div>
+        </form>
+      </div>
+    <nav id="top" style="text-align: center;">
+        <div id="topItems" class="w3-xxxlarge w3-padding" style="text-align: center;">
+            <a id="sideButton" class="fa fa-bars" onclick="openNav()"></a>
+            <a id="homeButton" class="fa fa-home tab" onclick="openTab(event, 'home')" ></a>
+            <a id="shopButton" class="fa fa-shopping-cart tab" onclick="openTab(event, 'shop')" title="WithersShop"></a>
+            <a id="botButton" class="fa fa-plug tab" onclick="openTab(event, 'bot')" title="WithersBot"></a>
+            <a class="fa fa-question tab"></a> |
+            <a class="fa fa-sign-in" id="signin" onclick="document.getElementById('id01').style.display='block'"></a>
+        </div>
+    </nav>
+    <div id="notif">
+        <span>
+            <div id="notif1">Sign up or sign in to have a better time!</div>
+        </span>
+        <span><a class="fa fa-times" id="closeNotif" style="padding-left: 200px;" href="#"></a></span>
+    </div>
+    <div>
+        <div id="side" class="side">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Account</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        </div>
+        <script>
+        function openNav() {
+          document.getElementById("side").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("side").style.width = "0";
+        }
+        </script>
+    </div>
+        <div id="home" class="tabCon">
+            <div id="homeWelcome">
+                <div id="good"></div>
+                <div id="welcome1" class="withers"><b>WithersWorld</b></div>
+                <div id="welcome2" class="welcome">Welcome to Wither's website!</div>
+            </div>
+            <div id="whattf">
+                <p id="findEase" style="font-size: 40px;">Here you can find things easier:</p>
+                <ul id="table">
+                    <li><a>WithersApps</a></li>
+                    <li><a onclick="gostore()">WithersStore</a></li>
+                    <li><a onclick="gobot()">WithersBot</a></li>
+                </ul>
+                <script>
+                    function gostore() {
+                        $("#shopButton").click();
+                    }
+                    function gobot() {
+                        $("#botButton").click();
+                    }
+                </script>
+            </div>
+            <div id="WithersApps">
+                <a href="#" class="cards" style="color: red;">
+                    <div class="fa fa-youtube-play icon"></div>
+                    <br>
+                    <div>Youtube</div>
+                </a>
+                <a href="#" class="cards" style="color: lightskyblue;">
+                    <div class="fab fa-twitter icon"></div>
+                    <br>
+                    <div>Twitter</div>
+                </a>
+                <a href="#" class="cards" style="color: orange">
+                    <div class="fab fa-reddit-alien icon"></div>
+                    <br>
+                    <div>Reddit</div>
+                </a>
+            </div>
+        </div>
+
+        <div id="shop" class="tabCon">
+            <div id="shopWelcome" style="text-align: center;">
+                <div class="withers"><b>WithersShop</b></div>
+            </div>
+            <div id="shopItems">
+        
+            </div>
+        </div>
+
+        <div id="bot" class="tabCon">
+            <div id="botWelcome" style="text-align: center;">
+                <div class="withers"><b>WithersBot</b></div>
+            </div>
+            <div id="join">
+                <a href="https://discord.com/oauth2/authorize?client_id=768214696019886121&scope=bot&permissions=2147483647">
+                    <span id="DiscordIcon" class="fab fa-discord"></span>
+                    <span id="DiscordJoin">Server Join</span>
+                </a>
+            </div>
+            <div id="BotCon">
+                <div id="botCommandCon">
+                <div style="background-color: black;width: 50%;">
+                    <span>Table of content:</span>
+                    <span class="sip">Still in progress</span> | 
+                    <span class="ncy">Not created yet</span>
+                </div>
+                <table id="botCon" class="botCommands">
+                    <thead>
+                        <div class="commandClassName">Bot</div>
+                        <tr class="commandHead">
+                            <th>Command</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                            <th>Only</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="ncy">
+                            <td>invite</td>
+                            <td>Create an invitation</td>
+                            <td>zinvite</td>
+                            <td>Invite permission</td>
+                        </tr>
+                        <tr class="ncy">
+                            <td>friend</td>
+                            <td>Friend a member</td>
+                            <td>zfriend [member]</td>
+                        </tr>
+                        <tr>
+                            <td>say</td>
+                            <td>Make the bot say something</td>
+                            <td>zsay [sentence]</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="moderationCon" class="botCommands">
+                    <thead>
+                        <div class="commandClassName">Moderation</div>
+                        <tr class="commandHead">
+                            <th>Command</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                            <th>Only</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>kick</td>
+                            <td>Kick a member</td>
+                            <td>zkick [member] [reason]</td>
+                            <td>Kick permission</td>
+                        </tr>
+                        <tr>
+                            <td>ban</td>
+                            <td>Ban a member</td>
+                            <td>zban [member] [reason]</td>
+                            <td>Ban permission</td>
+                        </tr>
+                        <tr class="ncy">
+                            <td>unban</td>
+                            <td>Unban someone</td>
+                            <td>zunban [nameTag]</td>
+                            <td>Ban permission</td>
+                        </tr>
+                        <tr class="ncy">
+                            <td>bans</td>
+                            <td>Get a list of all person banned</td>
+                            <td>zbans</td>
+                            <td>Ban permission</td>
+                        </tr>
+                        <tr>
+                            <td>mute</td>
+                            <td>Mute a member</td>
+                            <td>zmute [member] [reason]</td>
+                            <td>Mute permission</td>
+                        </tr>
+                        <tr class="ncy">
+                            <td>unmute</td>
+                            <td>Unmute a member</td>
+                            <td>zunmute [member]</td>
+                            <td>Mute permission</td>
+                        </tr>
+                        <tr class="ncy">
+                            <td>addrole</td>
+                            <td>Add a role to a member</td>
+                            <td>zaddrole [member] [role]</td>
+                            <td>Role permission</td>
+                        </tr>
+                        <tr class="ncy">
+                            <td>revrole</td>
+                            <td>Remove a role from a member</td>
+                            <td>zrevrole [member] [role]</td>
+                            <td>Role permission</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="infoCon" class="botCommands">
+                    <thead>
+                        <div class="commandClassName">Info</div>
+                        <tr class="commandHead">
+                            <th>Command</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>server</td>
+                            <td>Get info on the server</td>
+                            <td>zserver</td>
+                        </tr>
+                        <tr>
+                            <td>user</td>
+                            <td>Get info on an user</td>
+                            <td>zuser [member]</td>
+                        </tr>
+                        <tr>
+                            <td>today</td>
+                            <td>Get info on today</td>
+                            <td>ztoday</td>
+                        </tr>
+                        <tr>
+                            <td>channel</td>
+                            <td>Get info on a channel</td>
+                            <td>zchannel [channel]</td>
+                        </tr>
+                        <tr>
+                            <td>role</td>
+                            <td>Get info on a role</td>
+                            <td>zrole [role]</td>
+                        </tr>
+                        <tr class="sip">
+                            <td>bot</td>
+                            <td>Get info on WithersBot</td>
+                            <td>zbot</td>
+                        </tr>
+                        <tr class="ncy">
+                            <td>weather</td>
+                            <td>Get info on the weather of a city</td>
+                            <td>zweather [city]</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="rankCon" class="botCommands">
+                    <thead>
+                        <div class="commandClassName">Rank</div>
+                        <tr class="commandHead">
+                            <th>Command</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>addrank</td>
+                            <td>Create a new role</td>
+                            <td>zaddrank [name]</td>
+                        </tr>
+                        <tr>
+                            <td>delrank</td>
+                            <td>Remove a role</td>
+                            <td>zdelrank [role]</td>
+                        </tr>
+                        <tr>
+                            <td>namerank</td>
+                            <td>Change the name of a role</td>
+                            <td>znamerank [role] [name]</td>
+                        </tr>
+                        <tr>
+                            <td>colorrank</td>
+                            <td>Change the color of a role</td>
+                            <td>zcolorrank [role] [color:hex]</td>
+                        </tr>
+                        <tr class="ncy">
+                            <td>roles</td>
+                            <td>Get a list of all the roles of the server</td>
+                            <td>zroles</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="channelCon" class="botCommands">
+                    <thead>
+                        <div class="commandClassName">Channel</div>
+                        <tr class="commandHead">
+                            <th>Command</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>addchannel</td>
+                            <td>Create a new channel</td>
+                            <td>zaddchannel [name]</td>
+                        </tr>
+                        <tr>
+                            <td>delchannel</td>
+                            <td>Remove a channel</td>
+                            <td>zdelchannel [channel]</td>
+                        </tr>
+                        <tr>
+                            <td>namechannel</td>
+                            <td>Change the name of a channel</td>
+                            <td>znamechannel [channel] [name]</td>
+                        </tr>
+                        <tr>
+                            <td>movechannel</td>
+                            <td>Move the channel to a different place</td>
+                            <td>zmovechannel [category:id] [place]</td>
+                        </tr>
+                        <tr class="ncy">
+                            <td>channels</td>
+                            <td>Get a list of all the channels of the server</td>
+                            <td>zchannels</td>
+                        </tr>
+                        <tr>
+                            <td>topicchannel</td>
+                            <td>Change the topic of a channel</td>
+                            <td>ztopicchannel [channel] [topic]</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="funCon" class="botCommands">
+                    <thead>
+                        <div class="commandClassName">Fun</div>
+                        <tr class="commandHead">
+                            <th>Command</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8ball</td>
+                            <td>The 8 ball you love!</td>
+                            <td>z8ball [question]</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <div id="botSettingCon">
+                    <a href="#botCon">Bot</a>
+                    <a href="#moderationCon">Moderation</a>
+                    <a href="#infoCon">Info</a>
+                    <a href="#rankCon">Rank</a>
+                    <a href="#channelCon">Channel</a>
+                    <a href="#funCon">Fun</a>
+                    <a class="ncy">Count</a>
+                </div>
+            </div>
+        </div>
+
+<script>
+
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabCon");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tab");
+      
+      document.getElementById(tabName).style.display = "block";
+    }
+    $('.tab').on('click', function openTab(e, tabName) {
+        e.preventDefault();
+
+        $('.tab.current').removeClass('current');
+        $(this).addClass('current');
+    });
+    document.getElementById("homeButton").click();
+</script>
+<footer>
+    <div id="footer">
+        <div class="footerItems">
+            <h2>Other apps</h2>
+            <a>myNe</a>
+            <a>WebyHow</a>
+            <a>WebyHelp</a>
+        </div>
+        <div class="footerItems">
+            <h2>Company</h2>
+            <a>About myNe</a>
+            <a>Wither</a>
+        </div>
+    </div>
+    <div id="about">
+        <span>
+            <div>Created by myNe & Weby</div>
+            <div>Powered by myNe</div>
+        </span>
+        <span>&copy; myNe, Inc.</span>
+    </div>
+</footer>
+</body>
+</html>
