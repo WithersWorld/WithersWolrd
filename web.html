@@ -53,7 +53,25 @@
             <a class="fa fa-sign-in" id="signin" onclick="document.getElementById('id01').style.display='block'"></a>
         </div>
     </nav>
-
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabCon");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab");
+        
+        document.getElementById(tabName).style.display = "block";
+      }
+      $('.tab').on('click', function openTab(e, tabName) {
+          e.preventDefault();
+  
+          $('.tab.current').removeClass('current');
+          $(this).addClass('current');
+      });
+      document.getElementById("homeButton").click();
+  </script>
     <style>
 body {
   font-family: Arial, Helvetica, sans-serif;

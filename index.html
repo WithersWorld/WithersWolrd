@@ -65,11 +65,11 @@
     <mobile-nav>
         <div id="side" class="side">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">Bot</a>
+        <a onclick="openTab(event, 'home')">Home</a>
+        <a onclick="openTab(event, 'shop')">Shop</a>
+        <a onclick="openTab(event, 'bot')">Bot</a>
         <a href="#">About</a>
-        <a href="#">Signin</a>
+        <a onclick="document.getElementById('id01').style.display='block'">Signin</a>
         </div>
         <script>
         function openNav() {
