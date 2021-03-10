@@ -1,4 +1,4 @@
-    
+"use strict";
   window.onload = function () {
     lax.init()
     
@@ -60,15 +60,7 @@
             ]
         }
     })
-    lax.addElements('#homeWelcome', {
-        scrollY: {
-            translateY: [
-                ["elInX"],
-                [0, 'elHeight/2','elHeight'],
-                ["easeInOutQuad"],
-            ]
-        }
-    })
+    
   };
   $(function() {
     $('#notif').slideDown();
