@@ -27,7 +27,7 @@ body {
 /*Tabs*/
 .tab:hover {
   color: red;
-  font-size: 60px;
+  transform: scale(1.2);
   cursor: pointer;
 }
 .tab {
@@ -156,15 +156,12 @@ color: darkred;
     border-radius: 60px;
     margin: 20px;
 }
+#WithersApps .cards:hover {
+  transform: scale(1.1);
+}
 #WithersApps .cards .icon{
     font-size: 100px;
     transition: all .2s;
-}
-#WithersApps .cards:hover {
-    text-shadow: 2px black;
-    font-size: 80px;
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
 /*Side nav*/
