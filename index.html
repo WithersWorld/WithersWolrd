@@ -16,41 +16,12 @@
     <title>WithersWebsite</title>
 </head>
 <body>
-    <div id="id01" class="modal">
-  
-        <form class="modal-content animate" action="https://weby.com/sign.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
-          </div>
-      
-          <div class="container">
-            <div class="accitem">
-                <span><i class="fa fa-user fa-fw"></i></span>
-                <input class="input" type="text" name="username" placeholder="Username" maxlength="15" required="required">
-            </div>
-
-            <div class="accitem">
-                <span><i class="fa fa-key fa-fw"></i></span>
-                <input class="input" type="password" name="password" placeholder="Password" maxlength="20" required="required">
-            </div>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-            <button type="submit">Login</button>
-          </div>
-      
-          <div class="container">
-            <span><a href="#">Don't have an account?</a></span>
-            <span class="psw"><a href="#">Forgot password?</a></span>
-          </div>
-        </form>
-      </div>
     <nav id="top">
         <div id="topItems">
             <a id="sideButton" class="fa fa-bars mnav" onclick="openNav()"></a>
-            <a id="homeButton" class="fa fa-home tab wnav" onclick="openTab(event, 'home')" aria-label="WithersWeb"></a>
-            <a id="shopButton" class="fa fa-shopping-cart tab wnav" onclick="openTab(event, 'shop')" title="WithersShop"></a>
-            <a id="botButton" class="fa fa-plug tab wnav" onclick="openTab(event, 'bot')" title="WithersBot"></a>
+            <a id="homeButton" class="fa fa-home tab wnav" onclick="openTab(event, 'home')" aria-label="SplashWeb"></a>
+            <a id="shopButton" class="fa fa-shopping-cart tab wnav" onclick="openTab(event, 'shop')" title="SplashShop"></a>
+            <a id="botButton" class="fa fa-plug tab wnav" onclick="openTab(event, 'bot')" title="SplashBot"></a>
             <a class="fa fa-question tab wnav"></a> |
             <a class="fa fa-sign-in wnav" id="signin" onclick="document.getElementById('id01').style.display='block'"></a>
         </div>
@@ -83,15 +54,15 @@
         <div id="home" class="tabCon">
             <div id="homeWelcome">
                 <div id="good"></div>
-                <div id="welcome1" class="withers"><b>WithersWorld</b></div>
-                <div id="welcome2" class="welcome">Welcome to Wither's website!</div>
+                <div id="welcome1" class="withers"><b>iSplashy</b></div>
+                <div id="welcome2" class="welcome">Welcome to Splashy's website!</div>
             </div>
             <div id="whattf">
                 <p id="findEase" style="font-size: 40px;">Here you can find things easier:</p>
                 <ul id="table">
                     <li id="app"><a>WithersApps</a></li>
-                    <li id="app"><a onclick="goto('#shopButton')">WithersStore</a></li>
-                    <li id="app"><a onclick="goto('#botButton')">WithersBot</a></li>
+                    <li id="app"><a onclick="goto('#shopButton')">SplashStore</a></li>
+                    <li id="app"><a onclick="goto('#botButton')">SplashBot</a></li>
                 </ul>
                 <script>
                     function goto(tab) {
@@ -107,12 +78,12 @@
                     <br>
                     <div>Youtube</div>
                 </a>
-                <a href="https://twitter.com/WitherzWorld" target="_blank" class="cards" style="color: lightskyblue;">
+                <a href="https://twitter.com/iSplashy_" target="_blank" class="cards" style="color: lightskyblue;">
                     <div class="fab fa-twitter icon"></div>
                     <br>
                     <div>Twitter</div>
                 </a>
-                <a href="#" class="cards" style="color: orange">
+                <a href="https://www.reddit.com/user/iSplashy_" class="cards" style="color: orange">
                     <div class="fab fa-reddit-alien icon"></div>
                     <br>
                     <div>Reddit</div>
@@ -131,7 +102,7 @@
 
         <div id="bot" class="tabCon">
             <div id="botWelcome" style="text-align: center;">
-                <div class="withers"><b>WithersBot</b></div>
+                <div class="withers"><b>SplashBot</b></div>
             </div>
             <div id="join">
                 <a href="https://discord.com/oauth2/authorize?client_id=768214696019886121&scope=bot&permissions=2147483647">
