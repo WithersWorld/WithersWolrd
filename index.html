@@ -13,17 +13,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angular/1.0.2/angular.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>iSplashy Website</title>
+    <title>SlashPack Project</title>
 </head>
 <body>
     <nav id="top">
         <div id="topItems">
+            <!--
             <a id="sideButton" class="fa fa-bars mnav" onclick="openNav()"></a>
             <a id="homeButton" class="fa fa-home tab wnav" onclick="openTab(event, 'home')" aria-label="SplashWeb"></a>
             <a id="codeButton" class="fa fa-code tab wnav" ></a>
             <a id="shopButton" class="fa fa-shopping-cart tab wnav" onclick="openTab(event, 'shop')" title="SplashShop"></a>
             <a id="botButton" class="fa fa-plug tab wnav" onclick="openTab(event, 'bot')" title="SplashBot"></a>
             <a class="fa fa-question tab wnav"></a>
+            -->
+            <a>SlashPack</a>
         </div>
     </nav>
 
@@ -49,49 +52,32 @@
         <div id="home" class="tabCon">
             <div id="homeWelcome">
                 <div id="heroArea">
-                    <div></div>
+                    <div>Tools for this project:</div>
+                    <i class="type fab fa-html5" style="color: orangered;"></i>
+                    <i class="type fab fa-js" style="color: yellow;"></i>
+                    <i class="type fab fa-python" style="color: steelblue;"></i>
                 </div>
             </div>
-            <div id="whattf">
-                <p style="font-size: 40px;">Here you can find things easier:</p>
-                <ul id="table">
-                    <li id="app"><a>iSplashysApps</a></li>
-                    <li id="app"><a onclick="goto('#shopButton')">SplashStore</a></li>
-                    <li id="app"><a onclick="goto('#botButton')">SplashBot</a></li>
+            <p id="intro">
+                <div>Slash will be a future project made to renew the internet. Be prepared for the changes.</div>
+                <div>Slash is still in preparation.</div>
+                <div>Slash projects:</div>
+                <ul>
+                    <li>SlashPage</li>
+                    <li>SlashWorld</li>
+                    <li>Crash</li>
+                    <li>Crash.js</li>
+                    <li>Dash</li>
                 </ul>
-                <script>
-                    function goto(tab) {
-                        $(tab).click();
-                        document.body.scrollTop = 0;
-                        document.documentElement.scrollTop = 0;
-                    }
-                </script>
-            </div>
-            <div id="SplashApps">
-                <a href="https://www.youtube.com/channel/UCEhaRtTBEpzq3655QVpsOlQ" target="_blank" class="cards" style="color: red;">
-                    <div class="fa fa-youtube-play icon"></div>
-                    <br>
-                    <div>Youtube</div>
-                </a>
-                <a href="https://twitter.com/iSplashy_" target="_blank" class="cards" style="color: lightskyblue;">
-                    <div class="fab fa-twitter icon"></div>
-                    <br>
-                    <div>Twitter</div>
-                </a>
-                <a href="https://www.reddit.com/user/iSplashy_" class="cards" style="color: orange">
-                    <div class="fab fa-reddit-alien icon"></div>
-                    <br>
-                    <div>Reddit</div>
-                </a>
-            </div>
+            </p>
         </div>
-
+        <!--
         <div id="shop" class="tabCon"></div>
         <script src="shop.js"></script>
         
         <div id="bot" class="tabCon"></div>
         <script src="bot.js"></script>
-
+        -->
 <script>
 
     function openTab(evt, tabName) {
@@ -115,24 +101,13 @@
 <footer>
     <div id="footer">
         <div class="footerItems">
-            <h2>Other apps</h2>
-            <a>Weby</a>
-            <a>WebyHow</a>
-            <a>WebyHelp</a>
-            <a>CrashKit</a>
-            <a>Fun time</a>
-        </div>
-        <div class="footerItems">
-            <h2>Company</h2>
-            <a>Weby</a>
-            <a>Moby</a>
-            <a>Crash</a>
-            <a>Funtime</a>
+            <h2>Slash's first website</h2>
+            <h3>Like the Slash project?</h3>
         </div>
     </div>
     <div id="about">
-        <span>Created & Powered by Weby</span>
-        <span>&copy; Weby, Inc.</span>
+        <span>Created & Powered by Slash</span>
+        <span></span>
     </div>
 </footer>
 </body>

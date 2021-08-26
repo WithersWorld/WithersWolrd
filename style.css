@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 /*Christmas: Mountains of Christmas */
 /*Halloween: Butcherman */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Source Code Pro', monospace;
   background-color: white;
   overflow-x: hidden;
   margin: 0px;
@@ -40,8 +41,9 @@ color: darkred;
 }
 
 #footer {
-  background-color: black;
-  color: white;
+  background-color: white;
+  box-shadow: 0 4px 15px rgb(0, 0, 0, 0.5);
+  color: black;
   display: flex;
   justify-content: center;
   padding: 30px;
@@ -54,7 +56,7 @@ color: darkred;
 }
 #about {
   background-color: gray;
-  color: white;
+  color: black;
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -72,17 +74,16 @@ color: darkred;
       text-shadow: 0 0 20px red 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
     }
 }
-#notif {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  background-color: yellow;
-}
 .withers {
     font-size: 60px;
     animation: rubberBand 1.5s;
     animation: glow 1s ease-in-out infinite alternate;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 #homeWelcome {
     font-size: 50px;
@@ -91,11 +92,10 @@ color: darkred;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 75vh;
 }
-#homeWelcome:hover {
-  font-size: 100px;
+.type:hover {
+  animation: spin 2s linear infinite;
 }
 #loaderHome {
     border: 16px solid #f3f3f3;
@@ -109,6 +109,15 @@ color: darkred;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
   }
+.type {
+    font-size: 200px;
+    margin: 15px;
+}
+
+#intro {
+  background-color: black;
+}
+
   
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
@@ -125,11 +134,6 @@ color: darkred;
   align-items: center;
   justify-content: center;
   padding-top: 15px;
-}
-#whattf {
-    font-size: 30px;
-    background-color: black;
-    color: white;
 }
 #table {
     display: flex;
@@ -288,7 +292,7 @@ color: darkred;
     }
   } 
 
-/*WithersBot*/
+/*SplashBot*/
 #join {
   background-color: blue;
   color: white;
