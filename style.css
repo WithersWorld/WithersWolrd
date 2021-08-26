@@ -138,8 +138,8 @@ color: darkred;
     align-items: center;
     list-style: none;
 }
-/*WithersApps cards*/
-#WithersApps {
+/*SplashApps cards*/
+#SplashApps {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -147,7 +147,7 @@ color: darkred;
     align-items: center;
     height: 50vh;
 }
-#WithersApps .cards{
+#SplashApps .cards{
     font-size: 60px;
     padding: 60px;
     background-color: whitesmoke;
@@ -157,10 +157,10 @@ color: darkred;
     border-radius: 60px;
     margin: 20px;
 }
-#WithersApps .cards:hover {
+#SplashApps .cards:hover {
   transform: scale(1.1);
 }
-#WithersApps .cards .icon{
+#SplashApps .cards .icon{
     font-size: 100px;
     transition: all .2s;
 }
