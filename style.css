@@ -4,16 +4,17 @@
 /*Halloween: Butcherman */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #383c41;
+  background-color: white;
   overflow-x: hidden;
   margin: 0px;
 }
 #top {
     z-index: 20;
-    background: rgb(0, 0, 0);
+    background: white;
     width: 100vw;
     height: 80px;
-    color: white;
+    color: black;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
 }
 #topItems {
     display: flex;
@@ -31,7 +32,7 @@ body {
   cursor: pointer;
 }
 .tab {
-color: white;
+color: black;
 text-decoration: none;
 }
 .current {
