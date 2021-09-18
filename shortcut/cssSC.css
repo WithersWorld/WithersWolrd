@@ -1,4 +1,4 @@
-/*Slash Extension CSS Shortcuts 1.1.5  PUBLIC | MIT 3.0*/
+/*Slash Extension CSS Shortcuts 1.2.5  PUBLIC | MIT 3.0*/
 /*CrashKitScript for Webs and Apps*/
 /*Flex*/
 .flex {display: flex;}
@@ -108,6 +108,7 @@
 .bg-orangered{background: orangered;}.bg-yellowgreen{background: yellowgreen;}.bg-blueviolet{background: blueviolet;}
 .bg-white{background: white;}.bg-black{background: black;}.bg-gray{background: gray;}.bg-dgray{background: darkgray;}
 .bg-dred{background: darkred;}.bg-dblue{background: darkblue;}.bg-dyellow{background: darkgoldenrod;}.bg-dgreen{background: darkgreen;}.bg-dorange{background: darkorange;}.bg-dviolet{background: darkviolet;}
+
 /*Cursor*/
 .cursor-pointer:hover {cursor: pointer;}
 .cursor-text:hover {cursor: text;}

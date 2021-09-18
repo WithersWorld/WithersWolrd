@@ -27,10 +27,6 @@
     };
     document.getElementById("good").innerHTML = `Good ${type}`;
 
-    if (window.innerWidth < "480") {
-        
-    }
-    
 
     // Animations
     lax.addDriver('scrollY', function () {
