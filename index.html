@@ -11,111 +11,25 @@
     <link rel="stylesheet" href="https://slashpack.vercel.app/shortcut/cssSC.css">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>SlashPack Project</title>
+    <title>Pack Project</title>
 </head>
 <body>
     <nav id="top">
         <div id="topItems">
-            <!--
-            <a id="sideButton" class="fa fa-bars mnav" onclick="openNav()"></a>
-            <a id="homeButton" class="fa fa-home tab wnav" onclick="openTab(event, 'home')" aria-label="SplashWeb"></a>
-            <a id="codeButton" class="fa fa-code tab wnav" ></a>
-            <a id="shopButton" class="fa fa-shopping-cart tab wnav" onclick="openTab(event, 'shop')" title="SplashShop"></a>
-            <a id="botButton" class="fa fa-plug tab wnav" onclick="openTab(event, 'bot')" title="SplashBot"></a>
-            <a class="fa fa-question tab wnav"></a>
-            -->
-            <a>SlashPack</a>~
+            <a>Pack</a>~
             <span style="color: green;font: bold;font-family: sans-serif;">$</span>
             <span class="cursor animate__animated animate__flash animate__infinite animate__slow" style="font-family: sans-serif;">I</span>
         </div>
     </nav>
-
-    <mobile-nav>
-        <div id="side" class="side">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a onclick="openTab(event, 'home')">Home</a>
-        <a onclick="openTab(event, 'shop')">Shop</a>
-        <a onclick="openTab(event, 'bot')">Bot</a>
-        <a href="#">About</a>
-        <a onclick="document.getElementById('id01').style.display='block'">Signin</a>
-        </div>
-        <script>
-        function openNav() {
-          document.getElementById("side").style.width = "250px";
-        }
-        
-        function closeNav() {
-          document.getElementById("side").style.width = "0";
-        }
-        </script>
-    </mobile-nav>
         <div id="home" class="tabCon">
             <div id="homeWelcome">
                 <div id="heroArea">
-                    <div>Tools for this project:</div>
                     <i class="type fab fa-html5 animate__animated" style="color: orangered;"></i>
                     <i class="type fab fa-css3-alt animate__animated" style="color: blue"></i>
                     <i class="type fab fa-js" style="color: yellow;"></i>
                     <i class="type fab fa-python" style="color: steelblue;"></i>
                 </div>
             </div>
-            <p id="intro">
-                <div>Slash, the new net</div>
-                <div>Slash will be a new way of viewing the internet</div>
-                <div>Let's make the internet better for everyone!</div>
-                <div>Slash is still in preparation.</div>
-                <div>Slash projects:</div>
-                <ul>
-                    <li>Shealth</li>
-                    <li>SLFI</li>
-                    <li>SlashCode</li>
-                    <li>SlashWorld</li>
-                    <li>Crash</li>
-                    <li>Crash.js</li>
-                    <li>Dash</li>
-                </ul>
-            </p>
-            <div id="projects">
-                <div>Projects:</div>
-            </div>
         </div>
-        <!--
-        <div id="shop" class="tabCon"></div>
-        <script src="shop.js"></script>
-        
-        <div id="bot" class="tabCon"></div>
-        <script src="bot.js"></script>
-        -->
-<script>
-
-    function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabCon");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tab");
-      
-      document.getElementById(tabName).style.display = "block";
-    }
-    $('.tab').on('click', function openTab(e, tabName) {
-        e.preventDefault();
-
-        $('.tab.current').removeClass('current');
-        $(this).addClass('current');
-    });
-    document.getElementById("homeButton").click();
-</script>
-<footer>
-    <div id="footer">
-        <div class="footerItems">
-            <h2>Slash's first website</h2>
-            <h3>Like the Slash project?</h3>
-        </div>
-    </div>
-    <div id="about" class="flex align-center justify-center">
-        <span class="">Created & Powered by Slash</span>
-    </div>
-</footer>
 </body>
 </html>

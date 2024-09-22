@@ -1,0 +1,10 @@
+/* This is CSS */
+#za {
+    background-color: red; 
+    text-align: center;
+    font-size: 30px;
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    left: 45%;
+}

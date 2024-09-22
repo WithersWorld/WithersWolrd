@@ -183,6 +183,7 @@ color: darkred;
     align-items: center;
     list-style: none;
 }
+
 /*SplashApps cards*/
 #SplashApps {
     display: flex;
@@ -209,51 +210,6 @@ color: darkred;
     font-size: 100px;
     transition: all .2s;
 }
-
-/*Side nav*/
-.side {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  .side a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  .side a:hover {
-    color: red;
-  }
-  .side .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  @media screen and (max-height: 450px) {
-    .side {padding-top: 15px;}
-    .side a {font-size: 18px;}
-  }
-  
-  .input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
   
   /*Sign in*/
   button {
@@ -332,64 +288,6 @@ color: darkred;
        float: none;
     }
   } 
-
-/*SplashBot*/
-#join {
-  background-color: blue;
-  color: white;
-  font-size: 50px;
-  width: 360px;
-  padding: 20px;
-  cursor: pointer;
-}
-#discordJoin {
-  text-decoration: none;
-}
-#BotCon {
-  display: flex;
-  color: white;
-  font-size: 30px;
-}
-#botCommandCon {
-  width: 85vw;
-  height: auto;
-}
-.botCommands {
-  background-color: black;
-  color: white;
-  width: 75vw;
-  height: auto;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-.commandClassName {
-  background-color: red;
-  color: black;
-  padding: 10px;
-  width: 75vw;
-  margin-left: 10px;
-}
-.sip {color: red;}
-.ncy {color: orange;}
-th {
-  border-bottom: 2px solid white;
-}
-td {
-  border-bottom: 1px solid white;
-}
-tr:hover {
-  background-color: rgb(41, 38, 38);
-}
-
-#botSettingCon {
-  background-color: #484b4e;
-  padding: 20px;
-  margin-top: 50px;
-  display: flex;
-  height: 50%;
-  flex-direction: column;
-  position: sticky;
-}
 a {
   color: inherit;
   text-decoration: none;
