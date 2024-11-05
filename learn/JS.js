@@ -14,24 +14,22 @@ let $_ = `${array[0]}`
 typeof variable;
 
 // Array
-let array = ["red", "black"];
-array[0] // red
-array[2] = "white"; // Add to array
-delete array[2]; // Remove from array
-array[1] = "orange" // Change to array
-item in array;
-array.length;
-item // items
+let array = ["element"];
+array[0] // element
+array[1] = "item"; // Add to array
+delete array[1]; // Remove from array
+array[1] = "data" // Change to array
+array.length; // Array length: 1
 
 // Object
-let object = {color1: "red", color2: "black"};
-object.color1 || object["color1"] // red
-object["color3"] = "white"; // Add to object
-delete object.color3; // Remove from object
-object["color1"] = "dark red" // Change to object
-key in object;
-key // keys
-object[key] // values of keys
+let object = {key1: "value"};
+object["key1"] || object.key1 // value
+object["key2"] = "value2"; // Add to object
+delete object["key2"]; // Remove from object
+object["key2"] = "data" // Change to object
+
+let map = new Map([[key, value]]);
+let set = new Set([value]);
 
 console.log('message');
 alert("alert");
@@ -59,13 +57,13 @@ for (const i = 0; i < n; i++) {
     // repeat until i >= n - 1
     return i;
 };
-for (const i of array) {    // For of
+for (const element of array) {    // For of
     // repeat for all items
-    return i;
+    return element;
 }
 for (const key in object) {    // For in
     // repeat for all keys
-    return key;
+    return object[key];
 };
 
 // FUNCTION
@@ -139,10 +137,10 @@ try {    // Try
 /* Array Methods: array.
 toString(): convert array into string
 join(): toString() with something in between
-pop(): remove the last element of array
+pop(): remove the last element of array, returns the removed element
 push(): add an element at the end of array
 shift(): remove the first element of array
-unshift(): add an element at the beg
+unshift(): add an element at the beginning of array
 forEach(): call function for every array element
 map(): create array by performing function on each array element
 filter(): create array by testing every array element

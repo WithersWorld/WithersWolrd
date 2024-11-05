@@ -68,6 +68,7 @@
 .borderSolid {border-style: solid}
 .borderHidden {border-style: hidden}
 .borderNone {border-style: none}
+.borderRadius {border-radius: 10px;}
 
 /* Text Decoration */
 .textDashed {text-decoration: dashed;}
